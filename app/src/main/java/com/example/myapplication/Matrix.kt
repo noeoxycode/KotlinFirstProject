@@ -12,8 +12,8 @@ fun main(){
     println("matrix 1 is square : " + matrix.isQuare());
     println("matrix 2 is square : " + matrix2.isQuare());*/
     /*val square = SquareMatrix(8);
-    println(square.toString());*/
-    /*val booleanMatrix = BooleanMatrix(5,8);
+    println(square.toString());
+    val booleanMatrix = BooleanMatrix(5,8);
     println(booleanMatrix.toString());
     println(booleanMatrix.toString());*/
     /*val intMatrix = IntMatrix(5,9);
@@ -28,6 +28,15 @@ fun main(){
     println(finalMatrix.mainMatrix.toString());
     intMatrix *= intMatrixBis;
     println(intMatrix.mainMatrix.toString());*/
+    val mneMatrix = MinesweperBoard(5,6);
+    println(mneMatrix.mainMatrix.toString());
+    println("coucou 1");
+    val intMatrix = mneMatrix.getBoardHints();
+    println("int matrix to display");
+    println(intMatrix.toString());
+    println(intMatrix.mainMatrix.toString());
+    println("coucou 2");
+    mneMatrix.toString();
 
 }
 

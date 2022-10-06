@@ -3,7 +3,7 @@ package com.example.myapplication
 import kotlin.random.Random
 
 class IntMatrix (row: Int, column: Int): Matrix<Int>(row, column) {
-    override val mainMatrix : List<MutableList<Int?>> = List(row){ MutableList(column){ Random.nextInt() } };
+    override val mainMatrix : List<MutableList<Int?>> = List(row){ MutableList(column){ Random.nextInt(1,100) } };
 
     operator fun times(matrix2: IntMatrix): IntMatrix {
         var finalMatrix = IntMatrix(this.row, this.column);
